@@ -2,7 +2,7 @@
 
 Este projeto visa a classificação e análise de imagens de histopatologia oral utilizando a arquitetura de Deep Learning **EfficientNetV2**, acompanhada de mapas de ativação clássicos (**Grad-CAM**) para explicabilidade do modelo (interpretação das regiões visuais que motivaram a classificação tecidual).
 
-Para garantir a reprodutibilidade, o projeto está preparado para rodar nativamente em duas plataformas: **Kaggle** e **Google Colab**.
+Para garantir a reprodutibilidade, o projeto está preparado para rodar nativamente em duas plataformas: [**Kaggle**](https://www.kaggle.com/code/sthephannysantos/efficientnetv2-grad-cam-oral-histopathology) e [**Google Colab**](https://colab.research.google.com/drive/1N39yI880RAvK7c_z1Fi1FFBHAhcJn_24?usp=sharing).
 
 ---
 
