@@ -223,26 +223,29 @@ Siga o guia visual caso tenha dúvidas sobre como configurar o ambiente em cada 
 
 ### Ambiente Google Colab (10 Passos)
 
+
 | Passo | Descrição | Visualização |
-| --- | --- | --- |
-| **1** | [Descrição do passo 1 do Colab] |  |
-| **2** | [Descrição do passo 2 do Colab] |  |
-| **3** | [Descrição do passo 3 do Colab] |  |
-| **4** | [Descrição do passo 4 do Colab] |  |
-| **5** | [Descrição do passo 5 do Colab] |  |
-| **6** | [Descrição do passo 6 do Colab] |  |
-| **7** | [Descrição do passo 7 do Colab] |  |
-| **8** | [Descrição do passo 8 do Colab] |  |
-| **9** | [Descrição do passo 9 do Colab] |  |
-| **10** | [Descrição do passo 10 do Colab] |  |
+| :---: | :--- | :---: |
+| **1** |  | ![Passo 1 Colab](img/help/PASSO%201%20GOOGLE.png) |
+| **2** |  | ![Passo 2 Colab](img/help/PASSO%202%20GOOGLE.png) |
+| **3** |  | ![Passo 3 Colab](img/help/PASSO%203%20GOOGLE.png) |
+| **4** |  | ![Passo 4 Colab](img/help/PASSO%204%20GOOGLE.png) |
+| **5** |  | ![Passo 5 Colab](img/help/PASSO%205%20GOOGLE.png) |
+| **6** |  | ![Passo 6 Colab](img/help/PASSO%206%20GOOGLE.png) |
+| **7** |  | ![Passo 7 Colab](img/help/PASSO%207%20GOOGLE.png) |
+| **8** |  | ![Passo 8 Colab](img/help/PASSO%208%20GOOGLE.png) |
+| **9** |   | ![Passo 9 Colab](img/help/PASSO%209%20GOOGLE.png) |
+| **10** |  | ![Passo 10 Colab](img/help/PASSO%2010%20GOOGLE.png) |
+
+<br>
 
 ### Ambiente Kaggle (3 Passos)
 
 | Passo | Descrição | Visualização |
-| --- | --- | --- |
-| **1** | [Descrição do passo 1 do Kaggle] |  |
-| **2** | [Descrição do passo 2 do Kaggle] |  |
-| **3** | [Descrição do passo 3 do Kaggle] |  |
+| :---: | :--- | :---: |
+| **1** |   | ![Passo 1 Kaggle](img/help/PASSO%201%20KAGGLE.png) |
+| **2** |   | ![Passo 2 Kaggle](img/help/PASSO%202%20KAGGLE.png) |
+| **3** |   | ![Passo 3 Kaggle](img/help/PASSO%203%20KAGGLE.png) |
 
 
 ---
