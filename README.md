@@ -4,7 +4,9 @@ Este projeto visa a classificação e análise de imagens de histopatologia oral
 
 Para garantir a reprodutibilidade, o projeto está preparado para rodar nativamente em duas plataformas: [**Kaggle**](https://www.kaggle.com/code/sthephannysantos/efficientnetv2-grad-cam-oral-histopathology) e [**Google Colab**](https://colab.research.google.com/drive/1N39yI880RAvK7c_z1Fi1FFBHAhcJn_24?usp=sharing).
 
+
 ---
+<br>
 
 ## Autores
 
@@ -17,7 +19,9 @@ Para garantir a reprodutibilidade, o projeto está preparado para rodar nativame
 
 </div>
 
+
 ---
+<br>
 
 ## 📌 Sumário
 
@@ -33,7 +37,9 @@ Para garantir a reprodutibilidade, o projeto está preparado para rodar nativame
 - [Análise e Interpretação dos Resultados](#-análise-e-interpretação-dos-resultados)
 - [Limitações Conhecidas](#️-limitações-conhecidas)
 
+
 ---
+<br>
 
 ## Descrição dos Datasets
 
@@ -75,7 +81,9 @@ Desenvolvido pela Universidade Federal do Espírito Santo (UFES). Contém imagen
 > [!NOTE]
 > Os splits de ambos os datasets são fixos e compartilhados para permitir a comparação direta dos resultados entre diferentes execuções.
 
+
 ---
+<br>
 
 ## Arquiteturas Utilizadas
 
@@ -86,7 +94,9 @@ Ambas as arquiteturas são carregadas via biblioteca [TIMM (Pytorch Image Models
 
 Cada modelo é composto por um **backbone** (responsável pela extração automática de características visuais) e uma **camada classificadora fully connected** (responsável pela predição das classes). Os pesos pré-treinados na ImageNet são baixados automaticamente pelo `timm` na primeira execução.
 
+
 ---
+<br>
 
 ## Modos de Treinamento
 
@@ -98,7 +108,9 @@ Para cada arquitetura e dataset, três abordagens de transferência de aprendiza
 | `PT-FC` | Pré-treinado + Backbone Congelado | Pesos pré-treinados carregados; backbone congelado; apenas a camada classificadora final é treinada. |
 | `PT-ALL` | Pré-treinado + Fine-tuning Completo | Pesos pré-treinados carregados; todas as camadas (backbone e classificador) são otimizadas. |
 
+
 ---
+<br>
 
 ## Estratégia de Data Augmentation
 
@@ -111,7 +123,9 @@ As transformações de aumento de dados são aplicadas **exclusivamente no conju
   - `RandomRotation` sorteando estritamente entre 0°, 90°, 180° ou 270° (25% de chance cada)
   - Normalização padrão ImageNet (`mean=[0.485, 0.456, 0.406]`, `std=[0.229, 0.224, 0.225]`)
 
+
 ---
+<br>
 
 ## Desenho Experimental
 
@@ -141,7 +155,9 @@ Para mitigar o efeito da aleatoriedade, cada configuração é executada 3 vezes
 > [!IMPORTANT]
 > **Tempo estimado de execução** Utilizando GPU T4 x2 no Kaggle 2h40, Utilizando GPU T4 no Google 4h50.
 
+
 ---
+<br>
 
 ## Estrutura do Repositório
 
@@ -161,7 +177,9 @@ O código fonte e os recursos visuais estão organizados da seguinte forma:
 > [!WARNING]
 > **Nota sobre arquivos pesados:** Arquivos de dados e resultados volumosos não são armazenados diretamente no histórico do Git. Eles estão hospedados de forma segura na aba de **[Releases](pipipipopopoRELEASES)** deste repositório.
 
+
 ---
+<br>
 
 ## Links e Downloads (Releases)
 
@@ -171,7 +189,9 @@ Caso opte por rodar o projeto localmente ou inspecionar as saídas brutas, faça
 * **[resultados.zip](googleresultados):** Checkpoints, pesos salvos e logs gerados a partir do ambiente do **Google Colab**.
 * **[results.zip](kaggleresultados):** Outputs, logs de treino e matrizes geradas a partir do ambiente do **Kaggle**.
 
+
 ---
+<br>
 
 ## Como Executar o Projeto
 
@@ -193,7 +213,9 @@ Para rodar no Colab, siga as etapas:
 3. Baixe o arquivo `datasets.zip` na nossa aba de **Releases** e faça o upload no ambiente do Colab.
 4. *(Opcional)*: Se quiser apenas analisar as plotagens sem precisar realizar todo o treinamento do modelo (72 execuções), baixe e extraia o arquivo `resultados.zip` diretamente no ambiente.
 
+
 ---
+<br>
 
 ## Guia de Execução Passo a Passo
 
@@ -222,7 +244,9 @@ Siga o guia visual caso tenha dúvidas sobre como configurar o ambiente em cada 
 | **2** | [Descrição do passo 2 do Kaggle] |  |
 | **3** | [Descrição do passo 3 do Kaggle] |  |
 
+
 ---
+<br>
 
 ## Análise e Interpretação dos Resultados
 
@@ -236,7 +260,9 @@ Os gráficos de perda (loss) e acurácia demonstram o comportamento do modelo ao
 
 O uso do Grad-CAM permitiu mapear quais estruturas celulares e texturas teciduais foram determinantes para que a EfficientNetV2 categorizasse as patologias orais. Áreas hipercoradas e regiões com alterações morfológicas severas no epitélio tendem a registrar maior peso nos mapas de calor.
 
+
 ---
+<br>
 
 ## Limitações Conhecidas
 
